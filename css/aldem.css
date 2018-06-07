@@ -1,0 +1,129 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0px;
+}
+.background{
+	background-image: url("../images/background.png");
+	background-size: cover;
+	height: 120px;
+}
+.header{
+	position: relative;
+}
+.titulo{
+	color: white;
+	font-size: 50px;
+	margin: 0;
+	font-weight: bold;
+	/*margin-bottom: 0px;
+	padding-top: 15px;
+	padding-left: 80px;*/
+}
+.title-a{
+	color: white;
+	font-size: 24px;
+	margin: 0;
+	/*margin-top: 0px;
+	padding-left: 190px;*/
+}
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0;
+}
+
+.logo{
+	width: 330px;
+	padding-left: 50px;
+}
+
+.imanes{
+	width: 140px;
+	height: 110px;
+	margin: 5px;
+	margin-right: 85px;
+}
+.contenedor{
+	margin: auto;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.contenedor-textos{
+	margin-left: 80px;
+	margin-top: 10px;
+
+}
+
+h2{
+	color: #44d24b;
+}
+.contenedor-articulos{
+	display: flex;
+	justify-content: space-evenly;
+}
+.art-1 {
+	width: 400px;
+	text-align : justify;
+	color: gray;
+}
+.art-2 {
+	width: 400px;
+	text-align : justify;
+	color: gray;
+}
+.button{
+	border-radius: 12px;
+	background: #fd324e;
+	color: white;
+	border: none;
+	padding: 7px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 18px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+}
+.linea{
+	background-color: gray;
+	width: 1px;
+	height: 300px;
+	margin: 20px 0 0 0;
+}
+.linea-h{
+	background-color: gray;
+	width: 900px;
+	height: 1px;
+
+}
+.contenedor-patrocinantes{
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.contenedor-doctors h3{
+	color: gray;
+	display: inline;
+	margin: 5px;
+}
+.medicos {
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+}
+.medicos p{
+	font-size: 12px;
+}
+.avaladores{
+	display: inline;
+	margin: 5px;
+}
+.org{
+	display: inline-flex;
+}
+.org div{
+	margin: 5px;
+}
+.avaladores p{
+	font-size: 12px;
+}
