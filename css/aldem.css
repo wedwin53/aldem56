@@ -1,4 +1,43 @@
-body{
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ki0da2');
+  src:  url('../fonts/icomoon.eot?ki0da2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ki0da2') format('truetype'),
+    url('../fonts/icomoon.woff?ki0da2') format('woff'),
+    url('../fonts/icomoon.svg?ki0da2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.body{
 	font-family: 'Raleway', sans-serif;
 	margin: 0px;
 }
@@ -11,48 +50,66 @@ body{
 	position: relative;
 }
 .titulo{
-	color: white;
-	font-size: 50px;
-	margin: 0;
+	color: gray;
+	font-size: 38px;
+	margin: 5px;
 	font-weight: bold;
 	/*margin-bottom: 0px;
 	padding-top: 15px;
 	padding-left: 80px;*/
 }
 .title-a{
-	color: white;
+	color: gray;
 	font-size: 24px;
-	margin: 0;
+	margin: 5px;
 	/*margin-top: 0px;
 	padding-left: 190px;*/
 }
 
 .logotipo{
-	display: inline-block;
-	margin-left: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .logo{
-	width: 330px;
-	padding-left: 50px;
+	width: 300px;
+	height: 70px;
+}
+.menu{
+	font-size: 20px;
+	display: inline-block;
+	position: absolute;
+	font-weight: bold;
+}
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.menu li:before{
+	font-size: 30px;
+	line-height: 20px;
+	color: white;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+.menu ul{
+	padding-left: 0;
 }
 
-.imanes{
-	width: 140px;
-	height: 110px;
-	margin: 5px;
-	margin-right: 85px;
-}
 .contenedor{
 	margin: auto;
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 }
 .contenedor-textos{
 	margin-left: 80px;
 	margin-top: 10px;
+	margin-right: 10px;
 
 }
 
@@ -61,17 +118,36 @@ h2{
 }
 .contenedor-articulos{
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
-.art-1 {
-	width: 400px;
-	text-align : justify;
-	color: gray;
+
+.p-verde{
+	background-image: url("../images/background.png");
+	border-radius: 5px;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 25px;
+	color: white;
+	padding: 10px;
+	box-shadow: 5px 5px 0px #d8d0d0;
 }
-.art-2 {
-	width: 400px;
-	text-align : justify;
-	color: gray;
+
+.places{
+	background-image: url("../images/franja-gris.png");
+	color: white;
+	font-weight: bold;
+	height: 200px;
+}
+.cont-places{
+	display: flex;
+	justify-content: space-around;
+}
+.places h3{
+	font-weight: bold;
+	font-size: 40px;
 }
 .button{
 	border-radius: 12px;
@@ -81,49 +157,194 @@ h2{
 	padding: 7px 12px;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 12px;
 	background: linear-gradient(to left, #fe344e, #ff7250);
+	margin-left: 5px;
+
 }
-.linea{
-	background-color: gray;
-	width: 1px;
-	height: 300px;
-	margin: 20px 0 0 0;
-}
+
 .linea-h{
 	background-color: gray;
-	width: 900px;
-	height: 1px;
+	width: 2px;
+	height: 90px;
+	color: white;
+	margin: 5px 15px 10px 15px;
+}
+.section-especialistas{
+	text-align: center;
+}
+.cont-especialistas{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+.cont-especialistas img{
+	width: 125px;
+
+}
+.art-especialistas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
 
 }
 .contenedor-patrocinantes{
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
+	margin-bottom: 40px;
 }
 .contenedor-doctors h3{
 	color: gray;
 	display: inline;
 	margin: 5px;
 }
-.medicos {
-	display: inline-block;
+.agenda {
+	display: flex;
+	flex-direction: column;
 	font-size: 14px;
 	text-align: center;
+	padding: 5px;
+	width: 200px;
+	align-items: center;
 }
-.medicos p{
+.agenda p{
 	font-size: 12px;
 }
 .avaladores{
 	display: inline;
 	margin: 5px;
+	width: 500px;
 }
 .org{
 	display: inline-flex;
 }
 .org div{
-	margin: 5px;
+	margin: 20px;
 }
 .avaladores p{
+	font-size: 15px;
+}
+.footer{
+	background-image: url("../images/franja-gris.png");
+	background-size: cover;
+	height: 280px;
+}
+.button-doc{
+	border-radius: 5px;
+	background: #fd324e;
+	color: white;
+	border: none;
+	padding: 7px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	background: #44d24b;
+	width: 80%;
+	text-align: center;
+	box-shadow: 5px 5px 0px #d8d0d0;
+}
+.contenedor-footer{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+/*h3 ~ a{
+	margin-top: 5px;
+	color: white;
+	font-size: 22px;
+	text-align: right;
+}*/
+.contenedor-contacto{
+	display: flex;
+	justify-content: space-around;
+	color: white;
 	font-size: 12px;
+}
+.icon-telefono{
+	color: white;
+}
+span{
+	margin-right: 5px;
+}
+
+.redes{
+	margin-top: 20px;
+}
+
+h3 ~ a{
+	margin-top: 5px;
+	color: white;
+	font-size: 22px;
+	text-align: right;
+}
+
+
+/*CAROUSEL*/
+
+
+@media screen and (max-width: 880px){
+	hr{
+		display: none;
+	}
+	article{
+		display: none;
+	}
+	.footer{
+	background-image: url("../images/franja-gris.png");
+	background-size: cover;
+	height: auto;
+	}
+	.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+	}
+	#lema{
+		display: none;
+	}
+	.h2-derecha {
+		display: none;
+	}
+	h2 ~ p{
+		display: none;
+	}
+	.contenedor-contacto{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		color: white;
+		font-size: 12px;
+	}
+	.imanes {
+	    width: 120px;
+	    height: 95px;
+	    margin: 5px;
+	}
+	.contenedor-textos {
+	    margin-left: 15px;
+	    margin-top: 10px;
+	}
+	.titulo {
+	    color: white;
+	    font-size: 30px;
+	    margin: 0;
+	    font-weight: bold;
+	}
+	.title-a {
+	    color: white;
+	    font-size: 15px;
+	    margin: 0;
+	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	}
+
 }
