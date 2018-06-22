@@ -245,8 +245,24 @@ h2{
 	font-weight: bold;
 	background: #44d24b;
 	width: 80%;
+	height: 80px;
 	text-align: center;
 	box-shadow: 5px 5px 0px #d8d0d0;
+}
+.button-reg{
+	border-radius: 5px;
+	color: white;
+	border: none;
+	padding: 7px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+	background: #f44336;
+	width: 100%;
+	text-align: center;
+	box-shadow: 5px 5px 0px #d8d0d0;
+	margin-top: 20px;
 }
 .contenedor-footer{
 	display: flex;
