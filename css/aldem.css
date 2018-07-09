@@ -153,7 +153,7 @@ h2{
 }
 
 .p-verde{
-	background-image: url("../images/background.png");
+	/*background-image: url("../images/background.png");*/
 	border-radius: 5px;
 	width: 90%;
 	text-align: center;
@@ -163,14 +163,15 @@ h2{
 	padding: 10px;
 	box-shadow: 5px 5px 0px #d8d0d0;
 	text-shadow: 0px 2px #efefef;
+	border: solid 1px #efe7e7;
 }
 
 
 .places{
-	background-image: url("../images/franja-gris.png");
+	background-image: url("../images/background.png");
 	color: white;
 	font-weight: bold;
-	height: 200px;
+	height: 280px;
 	width: 100%;
 }
 .cont-places{
@@ -179,7 +180,7 @@ h2{
 }
 .places h3{
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 23px;
 }
 .button{
 	border-radius: 12px;
@@ -213,7 +214,7 @@ h2{
 	width: 2px;
 	height: 90px;
 	color: white;
-	margin: 5px 15px 10px 15px;
+	margin: 20px 15px 10px 15px;
 }
 .section-especialistas{
 	text-align: center;
