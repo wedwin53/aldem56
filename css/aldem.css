@@ -154,6 +154,7 @@ h2{
 
 .p-verde{
 	/*background-image: url("../images/background.png");*/
+	background-color: #f4fef7;
 	border-radius: 5px;
 	width: 90%;
 	text-align: center;
@@ -203,7 +204,7 @@ h2{
 	padding: 7px 12px;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 17px;
 	background: linear-gradient(to left, #fe344e, #ff7250);
 	margin-left: 5px;
 
@@ -240,6 +241,13 @@ h2{
 	align-items: center;
 	width: 300px;
 
+}
+.bella img{
+	width: 250px;
+	margin-top: -45px;
+}
+.bella h2{
+	font-size: 25;
 }
 .contenedor-patrocinantes{
 	display: flex;
@@ -294,9 +302,12 @@ h2{
 	font-weight: bold;
 	background: #44d24b;
 	width: 109%;
-	height: 57px;
+	height: 68px;
 	text-align: center;
 	box-shadow: 5px 5px 0px #d8d0d0;
+}
+.pclic{
+	color: #1e496b;
 }
 .button-reg{
 	border-radius: 5px;
@@ -435,7 +446,7 @@ h3 ~ a{
 	}
 	.places h3{
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 15px;
 	}
 
 	.cont-places {
